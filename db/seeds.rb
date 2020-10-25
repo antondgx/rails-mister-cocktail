@@ -6,18 +6,28 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Ingredient.all.each do |item|
-  item.destroy
+# clear db. Destroy cocktail first because ingredient is dependent on cocktail.
+Cocktail.all.each do |cocktail|
+  cocktail.destroy
 end
 
-Cocktail.all.each do |item|
-  item.destroy
+Ingredient.all.each do |ingredient|
+  ingredient.destroy
 end
 
-Ingredient.create(name: "lemon")
-Ingredient.create(name: "ice")
-Ingredient.create(name: "mint leaves")
+# seed ingredients
+Ingredient.create(name: "Lemon")
+Ingredient.create(name: "Ice")
+Ingredient.create(name: "Mint")
+Ingredient.create(name: "Vodka")
+Ingredient.create(name: "Rhum")
+Ingredient.create(name: "Tequila")
+Ingredient.create(name: "Orange Juice")
+Ingredient.create(name: "Tomato Juice")
 
-Cocktail.create(name: "sg sling")
-Cocktail.create(name: "coke")
-Cocktail.create(name: "sprite")
+# seed cocktails
+Cocktail.create(name: "Mojito")
+Cocktail.create(name: "Bloody Mary")
+Cocktail.create(name: "Sex on the Beach")
+Cocktail.create(name: "Margarita")
+Cocktail.create(name: "Pina Colada")

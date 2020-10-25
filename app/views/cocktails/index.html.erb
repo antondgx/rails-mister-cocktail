@@ -3,7 +3,7 @@
   <a class="btn btn-primary btn-sm" href="/cocktails/new" role="button">New Cocktail!</a>
 </div>
 
-<div class = "cards mt-3">
+<div class = "cards">
   <% @cocktails.each do |cocktail| %>
     <div class = "card">
       <%= link_to cocktail.name, cocktail_path(cocktail) %>

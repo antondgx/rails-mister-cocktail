@@ -11,3 +11,13 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.background {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR-p7oskepYM6wQU5I6E9buMX58prxdAG3vMw&usqp=CAU");
+  background-size: cover;
+}
+
+h1 {
+  color: red;
+  font-weight: bold;
+}
