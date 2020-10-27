@@ -12,9 +12,8 @@
 @import "components/index";
 @import "pages/index";
 
-.background {
-  background-color: #14213d;
-  background-size: cover;
+.banner {
+  background-color: $gray;
 }
 
 h1 {
