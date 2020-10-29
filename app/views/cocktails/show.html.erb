@@ -3,7 +3,7 @@
 <% if @cocktail.photo.attached? %>
   <%= cl_image_tag @cocktail.photo.key, width: 400, height: 300, crop: :fill %>
 <% else %>
-  <%= cl_image_tag("a1dz72omplaazj9f12bu", crop: :fill) %>
+  <%= cl_image_tag("a1dz72omplaazj9f12bu", width: 400, height: 300, crop: :fill) %>
 <% end %>
 <hr>
 
